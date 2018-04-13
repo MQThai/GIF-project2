@@ -21,4 +21,13 @@ router.get('/:id', (req, res) => {
   Gifs.findOne({_id: req.params.id}).then(gif => res.render('show', {gif}))
 })
 
+// update route
+router.get('/edit/:id', (req, res) => {
+  Gifs.findOne({_id: req.params.id}).then(gif => res.render('edit', {gif}))
+})
+
+router.put('/:id', (req, res) => {
+  Gifs.findOneAndUpdate({_id: req.params.id}, req.body, {new: true}).then(gif => res.redirect('/'))
+})
+
 module.exports = router
