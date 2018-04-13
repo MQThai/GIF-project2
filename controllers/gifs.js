@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const Gifs = require('../models/gifs')
+const parser = require('body-parser')
+const methodOverride = require('method-override')
 
 // index route
 router.get('/', (req, res) => {
@@ -28,6 +30,11 @@ router.get('/edit/:id', (req, res) => {
 
 router.put('/:id', (req, res) => {
   Gifs.findOneAndUpdate({_id: req.params.id}, req.body, {new: true}).then(gif => res.redirect('/'))
+})
+
+// delete route
+router.delete('/:id', (req, res) => {
+  Gifs.findOneAndRemove({_id: req.param.id}).then(() => res.redirect('/'))
 })
 
 module.exports = router

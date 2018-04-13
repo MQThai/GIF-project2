@@ -1,10 +1,14 @@
 <h2>Edit Gif:</h2>
 
-<form action="/" method="POST" accept-charset="utf-8">
+<form action="/{{gif.id}}" method="POST" accept-charset="utf-8">
   <p>
     URL:<br><input type="text" name="URL"/><br>
     Title:<br><input type="text" name="title"/><br>
     Tags:<br><input type="text" name="tags">
   </p>
   <input type="submit" value="Edit">
+</form>
+
+<form action="/{{gif.id}}?_method=delete" method="POST">
+  <input type="submit" value="Delete">
 </form>
