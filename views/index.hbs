@@ -3,7 +3,7 @@
 <ul>
   {{#each gifs}}
   <li>
-    <img src="{{this.url}}"/>
+    <a href="{{this.url}}">{{this.title}} - {{this.tags}}</a>
   </li>
   {{/each}}
 </ul>
