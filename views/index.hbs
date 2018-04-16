@@ -6,13 +6,12 @@
 
 <div>
   <ul>
-  {{#each gifs}}
+    {{#each gifs}}
     <li>
-      {{!-- target="_blank" opens image in a new tab --}}
-      <a class="thumbnail" target="_blank" href="{{this.url}}"><img src="{{this.url}}" style="width:100px"></a>
+      {{!-- target="_blank" opens in a new tab --}}
+      <a target="_blank" href="{{this.url}}"><img src="{{this.url}}" style="width:125px"></a>
       <a target="_blank" href="{{this.id}}">{{this.title}}</a>
-      <a class="button" href="/edit/{{this.id}}">edit</a>
-  {{/each}}
-  </li>
+    {{/each}}
+    </li>
   </ul>
 </div>
