@@ -8,6 +8,7 @@ const app = express()
 const gifsController = require('./controllers/gifs')
 
 app.set('view engine', 'hbs')
+app.use('/assets', express.static('public'))
 app.use(parser.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
 
