@@ -5,9 +5,14 @@
 </nav>
 
 <div>
+  <ul>
   {{#each gifs}}
-    <img src="{{this.url}}">
-    <a href="{{this.id}}">{{this.title}}</a>
-    <a class="button" href="/edit/{{this.id}}">edit</a>
+    <li>
+      {{!-- target="_blank" opens image in a new tab --}}
+      <a class="thumbnail" target="_blank" href="{{this.url}}" style="width:75px"><img src="{{this.url}}"></a>
+      <a target="_blank" href="{{this.id}}">{{this.title}}</a>
+      <a class="button" href="/edit/{{this.id}}">edit</a>
   {{/each}}
+  </li>
+  </ul>
 </div>

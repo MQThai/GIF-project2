@@ -1,11 +1,12 @@
 body {
   background: whitesmoke;
   font-family: Helvetica;
+  min-height: 100%;
   padding: 10px;
 }
 
 h1 {
-  background: rgb(99, 99, 129);
+  color: steelblue;
   font-size: 50px;
   text-align: center;
 }
@@ -25,17 +26,13 @@ h1 {
 }
 
 div {
-  background: rgb(184, 184, 167);
-  border: 2px solid black;
-  display: grid;
-  grid-gap: 10px;
-  margin: 10px;
-  padding: 10px;
+  display: block;
+  margin: 20px;
+  padding: 20px;
 }
 
-img {
-  float: left;
-  overflow: auto;
-  height: 75px;
-  width: 75px;
+li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
 }
