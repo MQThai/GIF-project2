@@ -1,11 +1,13 @@
-<h1>Gifs</h1>
+<h1>GIF Library</h1>
 
-<a href="/new">Add a GIF</a>
-<ul>
+<nav>
+  <a class="button" href="/new">Add a GIF</a>
+</nav>
+
+<div>
   {{#each gifs}}
-  <li>
-    <a href="{{this.id}}">{{this.title}}</a><br>
-    <a href="/edit/{{this.id}}">edit</a>
-  </li>
+    <img src="{{this.url}}">
+    <a href="{{this.id}}">{{this.title}}</a>
+    <a class="button" href="/edit/{{this.id}}">edit</a>
   {{/each}}
-</ul>
+</div>

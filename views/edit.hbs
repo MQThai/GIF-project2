@@ -6,9 +6,9 @@
     Title:<br><input type="text" name="title" value="{{gif.title}}"/><br>
     Tags:<br><input type="text" name="tags" value="{{gif.tags}}"/>
   </p>
-  <input type="submit" value="Edit">
+  <input class="button" type="submit" value="Edit">
 </form>
 
 <form action="/{{gif.id}}?_method=delete" method="POST">
-  <input type="submit" value="Delete">
+  <input class="button" type="submit" value="Delete">
 </form>
