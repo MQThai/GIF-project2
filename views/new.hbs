@@ -1,10 +1,17 @@
 <h2>New Gif:</h2>
 
-<form action="/gifs" method="POST" accept-charset="utf-8">
-  <p>
-    URL:<br><input type="text" name="url"/><br>
-    Title:<br><input type="text" name="title"/><br>
-    Tags:<br><input type="text" name="tags">
-  </p>
+<form action="/" method="POST" accept-charset="utf-8">
+  <div>
+    <label>URL</label>
+    <input type="text" name="url"/>
+  </div>
+  <div>
+    <label>Title</label>
+    <input type="text" name="title"/>
+  </div>
+  <div>
+    <label>Tags</label>
+    <input type="text" name="tags">
+  </div>
   <input class="button" type="submit" value="Add">
 </form>

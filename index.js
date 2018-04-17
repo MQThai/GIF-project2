@@ -17,7 +17,7 @@ app.use(cookieParser())
 
 app.use('/assets', express.static('public'))
 app.use(methodOverride('_method'))
-app.use(parser.urlencoded({ extended: true }))
+app.use(parser.urlencoded({extended: true}))
 
 app.use(session({secret: 'GIFLibrary'}))
 app.use(flash())

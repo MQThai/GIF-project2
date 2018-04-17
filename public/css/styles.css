@@ -35,6 +35,10 @@ img {
   width: 320px;
 }
 
+form {
+  text-align: center;
+}
+
 .alert {
   border: 2px solid red;
   background: rgba(100, 9, 9, 0.1);
