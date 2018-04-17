@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
 
 router.get('/signup', (req, res) => {
   res.render('signup.hbs', {message: req.flash('signupMessage')})
+  console.log(Object.keys(req.flash('signupMessage')))
 })
 
 router.post('/signup', (req, res) => {

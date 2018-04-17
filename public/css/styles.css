@@ -11,20 +11,6 @@ h1 {
   text-align: center;
 }
 
-.button {
-  border: 2px solid black;
-  color: black;
-  padding: 5px;
-  text-decoration: none;
-  transition-duration: 0.2s;
-  width: 10%;
-}
-
-.button:hover {
-  background: black;
-  color: white;
-}
-
 div {
   display: block;
   margin: 20px;
@@ -39,4 +25,19 @@ li {
 
 a {
   text-decoration: none;
+}
+
+
+.button {
+  border: 2px solid black;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  width: 10%;
+}
+
+.button:hover {
+  background: black;
+  color: white;
 }
