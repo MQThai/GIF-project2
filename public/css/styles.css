@@ -41,3 +41,14 @@ a {
   background: black;
   color: white;
 }
+
+.navbar {
+  border-bottom: 2px solid black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.navbutton {
+  float: left;
+}

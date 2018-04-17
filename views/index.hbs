@@ -1,14 +1,14 @@
 <h1>GIF Library</h1>
 
 <nav>
-  <ul>
+  <ul class="navbar">
     {{#if currentUser}}
-      <li><a href="/logout">Log out {{currentUser.local.username}}</a></li>
+      <li class="navbutton"><a href="/logout">Log out {{currentUser.local.username}}</a></li>
     {{else}}
-      <li><a href="/login">Log in</a></li>
-      <li><a href="/signup">Sign up</a></li>
+      <li class="navbutton"><a href="/login">Log in</a></li>
+      <li class="navbutton"><a href="/signup">Sign up</a></li>
     {{/if}}
-      <li><a class="button" href="/new">Add a GIF</a></li>
+      <li class="navbutton" style="float:right"><a href="/new">Add a GIF</a></li>
   </ul>
 </nav>
 
