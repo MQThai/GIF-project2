@@ -1,9 +1,6 @@
 const express = require('express')
-const Gifs = require('../models/gifs')
-const methodOverride = require('method-override')
-const parser = require('body-parser')
-const passport = require('passport')
 const router = express.Router()
+const Gifs = require('../models/gifs')
 
 // index route
 router.get('/', (req, res) => {

@@ -15,16 +15,16 @@ const usersController = require('./controllers/users')
 app.use(parser())
 app.use(cookieParser())
 
-app.use('/assets', express.static('public'))
-app.use(methodOverride('_method'))
-app.use(parser.urlencoded({extended: true}))
-
 app.use(session({secret: 'GIFLibrary'}))
 app.use(flash())
 
 passportConfig(passport)
 app.use(passport.initialize())
 app.use(passport.session())
+
+app.use('/assets', express.static('public'))
+app.use(methodOverride('_method'))
+app.use(parser.urlencoded({extended: true}))
 
 app.set('view engine', 'hbs')
 app.get('/', (req, res) => {
