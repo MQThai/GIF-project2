@@ -15,8 +15,10 @@ app.set('view engine', 'hbs')
 app.use('/assets', express.static('public'))
 app.use(parser.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
-app.use(flash())
 app.use(parser())
+
+app.use(session({secret: 'GIFLibrary'}))
+app.use(flash())
 
 passportConfig(passport)
 app.use(passport.initialize())
