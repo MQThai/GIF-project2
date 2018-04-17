@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 div {
   display: block;
   margin: 20px;
@@ -27,6 +31,15 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 320px;
+}
+
+.alert {
+  border: 2px solid red;
+  background: rgba(100, 9, 9, 0.1);
+  text-align: center;
+}
 
 .button {
   border: 2px solid black;
@@ -51,4 +64,8 @@ a {
 
 .navbutton {
   float: left;
+}
+
+#add {
+  float: right;
 }

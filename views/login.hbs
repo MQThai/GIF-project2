@@ -1,19 +1,19 @@
 {{#if message}}
-  <div class="alert alert-danger">{{message}}</div>
+  <div class="alert">{{message}}</div>
 {{/if}}
 
 <h2>Log in</h2>
 
 <form method="post" action="/login">
-  <div>
+  <span>
     <label>Username</label>
     <input type="text" name="username">
-  </div>
+  </span>
 
-  <div>
+  <span>
     <label>Password</label>
     <input type="password" name="password">
-  </div>
+  </span>
 
   <input type="submit" value="Log in">
 </form>

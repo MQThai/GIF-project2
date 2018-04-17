@@ -8,7 +8,7 @@
       <li class="navbutton"><a href="/login">Log in</a></li>
       <li class="navbutton"><a href="/signup">Sign up</a></li>
     {{/if}}
-      <li class="navbutton" style="float:right"><a href="/new">Add a GIF</a></li>
+      <li class="navbutton" id="add"><a href="/new">Add a GIF</a></li>
   </ul>
 </nav>
 
@@ -17,7 +17,7 @@
     {{#each gifs}}
     <li>
       {{!-- target="_blank" opens in a new tab --}}
-      <a target="_blank" href="{{this.url}}"><img src="{{this.url}}" style="width:125px"></a>
+      <a target="_blank" href="{{this.url}}"><img src="{{this.url}}"></a>
       <a target="_blank" href="{{this.id}}">{{this.title}}</a>
     </li>
     {{/each}}
