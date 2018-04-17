@@ -35,10 +35,7 @@ router.put('/:id', (req, res) => {
 
 // delete route
 router.delete('/:id', (req, res) => {
-  Gifs.findOneAndRemove({_id: req.params.id})
-    .then(() => {
-      res.redirect('/')
-    })
+  Gifs.findOneAndRemove({_id: req.params.id}).then(() => res.redirect('/'))
 })
 
 module.exports = router

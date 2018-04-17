@@ -1,6 +1,4 @@
 const express = require('express')
-const methodOverride = require('method-override')
-const parser = require('body-parser')
 const passport = require('passport')
 const router = express.Router()
 
