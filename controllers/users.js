@@ -20,3 +20,18 @@ router.post('/signup', (req, res) => {
   })
   return signupStrategy(req, res)
 })
+
+router.get('/login', (req, res) => {
+  res.render('login.hbs', {message: req.flash('loginMessage')})
+})
+
+router.post('/login', (req, res) => {
+  const loginProperty = passport.authenticate('local-login', {
+    successRedirect: '/',
+    failureRedirect: '/login',
+    failureFlash: true
+  })
+  return loginProperty(req, res)
+})
+
+module.exports = router
