@@ -34,4 +34,9 @@ router.post('/login', (req, res) => {
   return loginProperty(req, res)
 })
 
+router.get('/logout', (req, res) => {
+  req.logout()
+  res.redirect('/')
+})
+
 module.exports = router

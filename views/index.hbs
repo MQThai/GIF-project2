@@ -2,6 +2,14 @@
 
 <nav>
   <a class="button" href="/new">Add a GIF</a>
+  <ul>
+    {{#if currentUser}}
+      <li><a href="/logout">Log out {{currentUser.local.username}}</a></li>
+    {{else}}
+      <li><a href="/login">Log in</a></li>
+      <li><a href="/signup">Sign up</a></li>
+    {{/if}}
+  </ul>
 </nav>
 
 <div>
