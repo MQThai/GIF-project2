@@ -15,24 +15,8 @@ h2 {
   text-align: center;
 }
 
-div {
-  display: inline-block;
-  margin: 20px;
-  padding: 20px;
-}
-
-li {
-  list-style: none;
-  margin: 10px;
-  padding: 10px;
-}
-
 a {
   text-decoration: none;
-}
-
-img {
-  width: 35%;
 }
 
 form {
@@ -59,25 +43,40 @@ form {
   color: white;
 }
 
+.gifbox {
+  display: table;
+  clear: both;
+  margin: 20px;
+  padding: 5px;
+}
+
+.gifs {
+  float: left;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.gifoptions {
+  float: right;
+}
+
 .navbar {
   border-bottom: 2px solid black;
   overflow: hidden;
-  margin: 0;
+  margin-left: 16px;
   padding: 0;
 }
 
-.navbutton {
-  float: left;
-}
-
-#add {
-  float: right;
+.searchbutton {
+  background: gray;
+  cursor: pointer;
+  padding: 12px;
 }
 
 #search {
-  float: right;
+  float: none;
   font-size: 16px;
-  padding: 10px;
+  padding: 0;
   text-align: center;
   text-decoration: none;
 }
