@@ -7,6 +7,7 @@
     {{else}}
       <li class="navbutton"><a href="/login">Log in</a></li>
       <li class="navbutton"><a href="/signup">Sign up</a></li>
+      <input type="text" placeholder="Search GIFs" id="search">
     {{/if}}
       <li class="navbutton" id="add"><a href="/gifs/new">Add a GIF</a></li>
   </ul>
@@ -17,8 +18,7 @@
     {{#each gifs}}
     <li>
       {{!-- target="_blank" opens in a new tab --}}
-      <a target="_blank" href="{{this.url}}"><img src="{{this.url}}"></a>
-      <a target="_blank" href="/gifs/{{this.id}}">{{this.title}}</a>
+      <a target="_blank" href="/gifs/{{this.id}}"><img src="{{this.url}}"></a>
     </li>
     {{/each}}
   </ul>
