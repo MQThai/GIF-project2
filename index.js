@@ -39,4 +39,8 @@ app.use(function (req, res, next) {
 app.use('/', usersController)
 app.use('/gifs', gifsController)
 
-app.listen(3000, () => console.log('port 3000'))
+app.set('port', process.env.PORT || 3001)
+
+app.listen(app.get('port'), () => {
+  console.log(`✅ PORT: ${app.get('port')} 🌟`)
+})
