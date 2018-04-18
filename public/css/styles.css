@@ -50,28 +50,22 @@ li {
   color: white;
 }
 
-.gifbox {
+.gifBox {
   display: table;
   clear: both;
   margin: 20px;
   padding: 5px;
 }
 
-.gifoptions {
+.gifOptions {
   float: right;
 }
 
-.navbar {
+.navBar {
   border-bottom: 2px solid black;
   overflow: hidden;
   margin-left: 16px;
   padding: 0;
-}
-
-.searchbutton {
-  background: gray;
-  cursor: pointer;
-  padding: 12px;
 }
 
 #search {

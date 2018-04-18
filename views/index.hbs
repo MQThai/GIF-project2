@@ -1,26 +1,49 @@
 <h1>GIF Library</h1>
 
-<nav>
-  <div class="navbar">
+<div class="navBar">
     {{#if currentUser}}
       <a href="/logout">Log out {{currentUser.local.username}}</a></li>
     {{else}}
-      <a href="/login">Log in</a></li>
-      <a href="/signup">Sign up</a></li>
+      <a href="/login">Log in</a>
+      <a href="/signup">Sign up</a>
     {{/if}}
-      <form class="gifoptions" action="">
+      <form class="gifOptions" action="">
         <a href="/gifs/new">Add a GIF</a>
-        <input type="search" placeholder="Search GIFs" id="search">
-        <button class="searchbutton" type="submit"></button>
+        <input type="search" id="search" placeholder="Search GIFs">
       </form>
-  </div>
-</nav>
+</div>
 
-<div class="gifbox">
-  <ul>
+<div class="gifBox">
+  <ul id="gifTable">
   {{#each gifs}}
       {{!-- target="_blank" opens in a new tab --}}
-  <li><a target="_blank" href="/gifs/{{this.id}}"><img src="{{this.url}}"></a></li>
+  <li>
+    <a target="_blank" href="/gifs/{{this.id}}" data-tags="{{this.tags}}"><img src="{{this.url}}"></a>
+  </li>
   {{/each}}
   </ul>
 </div>
+
+<script>
+var ul = document.getElementById('gifTable')
+var search = document.querySelector('#search')
+// search bar functionality
+search.addEventListener('keyup', searchFunction)
+
+function searchFunction (event) {
+  var listItems, a, i
+  listItems = ul.getElementsByTagName('li')
+   Array.from(listItems).forEach(item => {
+    a = item.getElementsByTagName('a')[0]
+    if (a.dataset.tags.includes(event.target.value)) {
+      item.style.display = ''
+    } else {
+      item.style.display = 'none'
+    }
+  })
+}
+// display GIFs randomly
+for (i = ul.children.length; i > 0; i--) {
+  ul.append(ul.children[Math.random() * i | 0])
+}
+</script>
