@@ -17,8 +17,10 @@
 </nav>
 
 <div class="gifbox">
+  <ul>
   {{#each gifs}}
       {{!-- target="_blank" opens in a new tab --}}
-  <a class="gifs" target="_blank" href="/gifs/{{this.id}}"><img src="{{this.url}}"></a>
+  <li><a target="_blank" href="/gifs/{{this.id}}"><img src="{{this.url}}"></a></li>
   {{/each}}
+  </ul>
 </div>

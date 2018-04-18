@@ -24,6 +24,12 @@ form {
   text-align: center;
 }
 
+li {
+  float: left;
+  list-style-type: none;
+  padding: 5px;
+}
+
 .alert {
   border: 2px solid red;
   background: rgba(100, 9, 9, 0.1);
@@ -48,12 +54,6 @@ form {
   display: table;
   clear: both;
   margin: 20px;
-  padding: 5px;
-}
-
-.gifs {
-  float: left;
-  list-style-type: none;
   padding: 5px;
 }
 
