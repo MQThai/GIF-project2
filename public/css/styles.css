@@ -2,8 +2,6 @@ body {
   background: whitesmoke;
   font-family: Helvetica;
   min-height: 100%;
-  padding: 10px;
-  position: relative;
 }
 
 h1 {
@@ -64,14 +62,9 @@ li {
 .navBar {
   border-bottom: 2px solid black;
   overflow: hidden;
-  margin-left: 16px;
-  padding: 0;
 }
 
 #search {
-  float: none;
-  font-size: 16px;
-  padding: 0;
+  font-size: 15px;
   text-align: center;
-  text-decoration: none;
 }
