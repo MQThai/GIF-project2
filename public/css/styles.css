@@ -49,8 +49,6 @@ li {
 }
 
 .gifBox {
-  display: table;
-  clear: both;
   margin: 20px;
   padding: 5px;
 }
