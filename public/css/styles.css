@@ -3,6 +3,7 @@ body {
   font-family: Helvetica;
   min-height: 100%;
   padding: 10px;
+  position: relative;
 }
 
 h1 {
