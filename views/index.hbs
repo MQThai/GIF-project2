@@ -31,9 +31,8 @@ var search = document.querySelector('#search')
 search.addEventListener('keyup', searchFunction)
 
 function searchFunction (event) {
-  var listItems, a, i
-  listItems = ul.getElementsByTagName('li')
-   Array.from(listItems).forEach(item => {
+  let listItems = ul.getElementsByTagName('li')
+  Array.from(listItems).forEach(item => {
     a = item.getElementsByTagName('a')[0]
     if (a.dataset.tags.includes(event.target.value)) {
       item.style.display = ''
