@@ -3,15 +3,15 @@
 <form action="/gifs/{{gif.id}}?_method=put" method="POST" accept-charset="utf-8">
   <div>
     <label>URL</label>
-    <input type="text" name="URL" size="100" value="{{gif.url}}"/>
+    <input type="text" name="URL" size="100" autocomplete="off" value="{{gif.url}}"/>
   </div>
   <div>
     <label>Title</label>
-    <input type="text" name="title" size="100" value="{{gif.title}}"/>
+    <input type="text" name="title" size="100" autocomplete="off" value="{{gif.title}}"/>
   </div>
   <div>
     <label>Tags</label>
-    <input type="text" name="tags" size="100" value="{{gif.tags}}"/>
+    <input type="text" name="tags" size="100" autocomplete="off" value="{{gif.tags}}"/>
   </div>
   <input class="button" type="submit" value="Edit">
 </form>
