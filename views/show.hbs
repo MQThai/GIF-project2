@@ -1,9 +1,10 @@
 <h1>{{gif.title}}</h1>
 
 <div class="showpage">
-  <a href="{{gif.url}}"><img src="{{gif.url}}"></a>
+  <img src="{{gif.url}}"></a>
   <p>
-  Tags: {{gif.tags}}
+    <input type="text" size="100" value="{{gif.url}}" readonly><br>
+    <input type="text" size="100" value="{{gif.tags}}" readonly>
   </p>
 
   <a class="button" href="/gifs/edit/{{gif.id}}">edit</a>
