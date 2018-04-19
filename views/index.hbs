@@ -15,12 +15,11 @@
 
 <div class="gifBox">
   <ul id="gifTable">
-  {{#each gifs}}
-      {{!-- target="_blank" opens in a new tab --}}
-  <li>
-    <a target="_blank" href="/gifs/{{this.id}}" data-tags="{{this.tags}}"><img src="{{this.url}}" style="width:250px;height:250px"></a>
-  </li>
-  {{/each}}
+    {{#each gifs}}
+    <li>
+    <a href="/gifs/{{this.id}}" data-tags="{{this.tags}}"><img src="{{this.url}}" style="width:250px;height:250px"></a>
+    </li>
+    {{/each}}
   </ul>
 </div>
 
