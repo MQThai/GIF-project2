@@ -2,10 +2,13 @@
 
 <div class="showpage">
   <img src="{{gif.url}}"></a>
-  <p>
-    <input type="text" size="100" value="{{gif.url}}" readonly><br>
+  <div>
+    <label>URL</label>
+    <input type="text" size="100" value="{{gif.url}}" readonly>
+  </div>
+  <div>
+    <label>Tags</label>
     <input type="text" size="100" value="{{gif.tags}}" readonly>
-  </p>
-
+  </div><br>
   <a class="button" href="/gifs/edit/{{gif.id}}">edit</a>
 </div>
