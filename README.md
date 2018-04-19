@@ -5,12 +5,12 @@ GIF Library is for users to save gifs for easy access and future use instead of 
 * Filter/search function for faster access
 * Users can add tags for easier recall of gifs
 
-## Unsolved Problems
-* Users don't have their own collection of gifs
-* Users signing up/logging have no connection to management of their collection of gifs
-* Filter/search is case sensitive
-* Tags don't open a new collection of gifs relating to specified tag
-* Not mobile friendly yet
+## Future Features
+* Users have their own collection of gifs
+* Filter/search is not case sensitive
+* Clickable tags to open new page of gifs with specified tag
+* Mobile friendly
+* Limit size of gifs shown to reduce loading time
 ## Credits
 James Reichard for helping with the filter/search function.
 
