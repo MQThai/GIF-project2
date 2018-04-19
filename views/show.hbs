@@ -1,11 +1,10 @@
-<h1>GIF Library</h1>
+<h1>{{gif.title}}</h1>
 
-<h3>{{gif.title}}</h3>
-
-<a href="{{gif.url}}"><img src="{{gif.url}}"></a>
-
-<p>
+<div class="showpage">
+  <a href="{{gif.url}}"><img src="{{gif.url}}"></a>
+  <p>
   Tags: {{gif.tags}}
-</p>
+  </p>
 
-<a class="button" href="/gifs/edit/{{gif.id}}">edit</a>
+  <a class="button" href="/gifs/edit/{{gif.id}}">edit</a>
+</div>

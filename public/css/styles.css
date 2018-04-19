@@ -63,6 +63,12 @@ li {
   overflow: hidden;
 }
 
+.showpage {
+  width: center;
+  padding: 25px;
+  text-align: center;
+}
+
 #search {
   font-size: 15px;
   text-align: center;
