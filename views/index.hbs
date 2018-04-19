@@ -1,25 +1,25 @@
 <h1>GIF Library</h1>
 
 <div class="navBar">
-    {{#if currentUser}}
-      <a href="/logout">Log out {{currentUser.local.username}}</a></li>
-    {{else}}
-      <a href="/login">Log in</a>
-      <a href="/signup">Sign up</a>
-    {{/if}}
-      <form class="gifOptions" action="">
-        <a href="/gifs/new">Add a GIF</a>
-        <input type="search" id="search" placeholder="Search GIFs" size="45" autocomplete="off">
-      </form>
+  {{#if currentUser}}
+  <a href="/logout">Log out {{currentUser.local.username}}</a></li>
+  {{else}}
+  <a href="/login">Log in</a>
+  <a href="/signup">Sign up</a>
+  {{/if}}
+  <form class="gifOptions" action="">
+  <a href="/gifs/new">Add a GIF</a>
+  <input type="search" id="search" placeholder="Search GIFs" size="45" autocomplete="off">
+  </form>
 </div>
 
 <div class="gifBox">
   <ul id="gifTable">
-    {{#each gifs}}
+  {{#each gifs}}
     <li>
     <a href="/gifs/{{this.id}}" data-tags="{{this.tags}}"><img src="{{this.url}}" style="width:250px;height:250px"></a>
     </li>
-    {{/each}}
+  {{/each}}
   </ul>
 </div>
 
@@ -41,6 +41,9 @@ function searchFunction (event) {
   })
 }
 // display GIFs randomly with a For loop
+// math.random() gives you a random number between 0 and 1
+// multiplying by i in loop give you weird values
+// | 0 gives the integer part of value, basically rounding the value
 for (i = ul.children.length; i > 0; i--) {
   ul.append(ul.children[Math.random() * i | 0])
 }
