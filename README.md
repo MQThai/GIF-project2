@@ -10,6 +10,7 @@ GIF Library is for users to save gifs for easy access and future use instead of 
 * Users signing up/logging have no connection to management of their collection of gifs
 * Filter/search is case sensitive
 * Tags don't open a new collection of gifs relating to specified tag
+* Not mobile friendly yet
 ## Credits
 James Reichard for helping with the filter/search function.
 
