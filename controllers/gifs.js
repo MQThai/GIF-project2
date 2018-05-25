@@ -18,6 +18,7 @@ router.post('/', (req, res) => {
 
 // show route
 router.get('/:id', (req, res) => {
+  // can also use .findById(), check it out 🍕 http://mongoosejs.com/docs/api.html#findbyid_findById
   Gifs.findOne({_id: req.params.id}).then(gif => res.render('show', {gif}))
 })
 

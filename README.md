@@ -1,6 +1,8 @@
 # GIF-project2
 GIF Library is for users to save gifs for easy access and future use instead of having to comb and look through their bookmarks.
 
+<!-- Add setup instruction here -->
+
 ## Link
 https://giflibrary-p2.herokuapp.com/gifs
 
@@ -17,8 +19,9 @@ https://giflibrary-p2.herokuapp.com/gifs
 ## Credits
 James Reichard for helping with the filter/search function.
 
-The function is done with DOM manipulation
-```
+The function is done with DOM manipulation:
+
+```jsx
 // gifs shown
 var ul = document.getElementById('gifTable') 
 
@@ -40,7 +43,9 @@ function searchFunction (event) {
   })
 }
 ```
+
 The function looks for ```data-tags="{{this.tags}}"``` of each gif
+
 ## Resources
 * https://www.w3schools.com/
 * https://stackoverflow.com/
